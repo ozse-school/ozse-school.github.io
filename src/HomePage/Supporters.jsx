@@ -17,7 +17,7 @@ function Supporters({ id }) {
 
   const mobileSettings = {
     infinite: true,
-    speed: 3000,
+    speed: 4000,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Agenda() {
+function Agenda({id}) {
   const [selectedDate, setSelectedDate] = useState("1 Feb");
   const EventDate = ["1 Feb", "2 Feb"];
   const agendaItems = [
@@ -41,7 +41,7 @@ function Agenda() {
   const filteredItems = agendaItems.filter(item => item.Date === selectedDate);
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8" id={id}>
       <p className="text-4xl font-bold mb-6 text-center">Agenda</p>
 
       <div className="flex gap-4 mb-8 justify-center flex-wrap sm:flex-nowrap sm:overflow-visible overflow-x-auto">

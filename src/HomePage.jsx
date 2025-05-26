@@ -9,12 +9,12 @@ import ContactUs from "./HomePage/ContactUs";
 function HomePage() {
   return (
     <div>
-        <Hero />
-        <Agenda />
-        <RegisterBanner />
-        <Venue />
-        <Supporters />
-        <ContactUs />
+        <Hero id="hero" />
+        <Agenda id="agenda" />
+        <RegisterBanner id="register" />
+        <Venue id="venue" />
+        <Supporters id="support" />
+        <ContactUs id="contact" />
     </div>
   );
 }

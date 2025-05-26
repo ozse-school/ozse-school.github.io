@@ -1,6 +1,6 @@
 import React from "react";
 
-function Hero() {
+function Hero({id}) {
   return (
     <div
       className="text-white h-screen flex items-center justify-center px-4 bg-cover bg-center"
@@ -10,6 +10,7 @@ function Hero() {
           url('/hero-section.png')
         `,
       }}
+      id={id}
     >
       <div className="max-w-4xl text-start rounded">
         <p className="text-4xl md:text-6xl font-bold mb-4"> Australian Summer School on Software Engineering (OzSE) </p>

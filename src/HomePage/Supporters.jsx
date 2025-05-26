@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function Supporters() {
+function Supporters({ id }) {
   const supporters = [
     { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
     { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
@@ -28,7 +28,7 @@ function Supporters() {
   };
 
   return (
-    <div className="bg-white p-8 max-w-6xl mx-auto text-center">
+    <div className="bg-white p-8  mb-12 max-w-6xl mx-auto text-center" id={id}>
       <h2 className="text-4xl font-bold mb-8">Supporters</h2>
 
       <div className="hidden md:grid grid-cols-4 gap-6 mb-8">

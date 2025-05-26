@@ -1,8 +1,8 @@
 import React from "react";
 
-function ContactUs() {
+function ContactUs({id}) {
   return (
-    <div className="bg-[#000F46] p-8 text-white">
+    <div className="bg-[#000F46] p-8 text-white" id={id}>
       <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
         <div className="md:w-1/2 space-y-4 p-4 md:p-24">
           <p className="text-4xl font-bold">Contact Us</p>

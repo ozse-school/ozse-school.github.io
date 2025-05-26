@@ -1,8 +1,8 @@
 import React from "react";
 
-function Venue() {
+function Venue({id}) {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-24 space-y-8 px-4 sm:px-0">
+    <div className="flex flex-col items-center justify-center text-center p-12 space-y-8 px-4 sm:px-0" id={id}>
       <p className="text-3xl sm:text-4xl font-bold">Venue</p>
 
       <div className="w-full max-w-[600px] h-[300px] sm:h-[450px]">

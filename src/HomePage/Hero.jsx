@@ -6,7 +6,7 @@ function Hero({id}) {
       className="text-white h-screen flex items-center justify-center px-4 bg-cover bg-center"
       style={{
         backgroundImage: `
-          linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #000F46),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #000F46),
           url('/hero-section.png')
         `,
       }}

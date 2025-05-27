@@ -7,7 +7,7 @@ function Hero({id}) {
       style={{
         backgroundImage: `
           linear-gradient(to bottom, rgba(0, 0, 0, 0.4), #000F46),
-          url('/hero-section.png')
+          url('/hero-section.jpg')
         `,
       }}
       id={id}

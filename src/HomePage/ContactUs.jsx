@@ -19,7 +19,7 @@ function ContactUs({id}) {
               <label className="block text-sm font-medium mb-1">Name</label>
               <input
                 type="text"
-                className="w-full p-3 rounded-full bg-white text-black"
+                className="w-full p-3 rounded bg-white text-black"
                 placeholder="Your Name"
               />
             </div>
@@ -27,7 +27,7 @@ function ContactUs({id}) {
               <label className="block text-sm font-medium mb-1">Email</label>
               <input
                 type="email"
-                className="w-full p-3 rounded-full bg-white text-black"
+                className="w-full p-3 rounded bg-white text-black"
                 placeholder="your@email.com"
               />
             </div>
@@ -35,7 +35,7 @@ function ContactUs({id}) {
               <label className="block text-sm font-medium mb-1">Message</label>
               <textarea
                 rows="4"
-                className="w-full p-3 rounded-full bg-white text-black"
+                className="w-full p-3 rounded-lg bg-white text-black"
                 placeholder="Your message..."
               ></textarea>
             </div>

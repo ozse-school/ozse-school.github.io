@@ -5,14 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Supporters({ id }) {
   const supporters = [
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
-    { Name: "OzSE Foundation", image: "https://placehold.co/280x280.png?text=OzSE+Foundation" },
+    { Name: "SigSoft", image: "./sponsor/01-acm-sigsoft.png" },
+    { Name: "University OF Melbourne", image: "./sponsor/02-the-university-of-melbourne.png" },
+    { Name: "Monash University", image: "./sponsor/03-monash-university.png" },
   ];
 
   const mobileSettings = {
@@ -31,10 +26,10 @@ function Supporters({ id }) {
     <div className="bg-white p-8  mb-12 max-w-6xl mx-auto text-center" id={id}>
       <h2 className="text-4xl font-bold mb-8">Supporters</h2>
 
-      <div className="hidden md:grid grid-cols-4 gap-6 mb-8">
+      <div className="hidden md:grid grid-cols-3 gap-6 mb-8 flex justify-center items-center">
         {supporters.map((supporter, i) => (
           <div key={i} className="flex flex-col items-center">
-            <img src={supporter.image} alt={supporter.Name} className="w-full object-cover" />
+            <img src={supporter.image} alt={supporter.Name} className="w-3/4 object-cover" />
           </div>
         ))}
       </div>

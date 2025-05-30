@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isTop, setIsTop] = useState(true); 
+  const [isTop, setIsTop] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
@@ -35,13 +35,11 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3 shadow-md transition-colors duration-300 ${
-        isTop
-          ? "bg-transparent text-white"
-          : "bg-[#000F46] text-white"
+        isTop ? "bg-transparent text-white" : "bg-[#000F46] text-white"
       }`}
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <div className="text-xl font-bold select-none">LOGO</div>
+        <div className="text-xl font-bold select-none"></div>
 
         <button
           className="md:hidden focus:outline-none"
@@ -77,10 +75,10 @@ function Navbar() {
         <div className="hidden md:flex md:space-x-6 md:items-center">
           {[
             { id: "Hero", label: "About" },
-            { id: "agenda", label: "Agenda" },
-            { id: "register", label: "Register" },
+            // { id: "agenda", label: "Agenda" },
+            // { id: "register", label: "Register" },
             { id: "support", label: "Supporter" },
-            { id: "contact", label: "Contact" },
+            // { id: "contact", label: "Contact" },
           ].map(({ id, label }) => (
             <button
               key={id}

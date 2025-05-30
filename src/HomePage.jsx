@@ -10,13 +10,13 @@ import Team from "./HomePage/Team";
 function HomePage() {
   return (
     <div>
-        <Hero id="hero" />
-        <Agenda id="agenda" />
-        <RegisterBanner id="register" />
-        <Venue id="venue" />
-        <Supporters id="support" />
-        <Team id="team" />
-        <ContactUs id="contact" />
+      <Hero id="hero" />
+      {/* <Agenda id="agenda" /> */}
+      {/* <RegisterBanner id="register" /> */}
+      <Venue id="venue" />
+      <Supporters id="support" />
+      <Team id="team" />
+      {/* <ContactUs id="contact" /> */}
     </div>
   );
 }

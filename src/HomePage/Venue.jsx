@@ -1,8 +1,11 @@
 import React from "react";
 
-function Venue({id}) {
+function Venue({ id }) {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-12 space-y-8 px-4 sm:px-0" id={id}>
+    <div
+      className="flex flex-col items-center justify-center text-center p-12 space-y-8 px-4 sm:px-0"
+      id={id}
+    >
       <p className="text-3xl sm:text-4xl font-bold">Venue</p>
 
       <div className="w-full max-w-[600px] h-[300px] sm:h-[450px]">
@@ -19,9 +22,9 @@ function Venue({id}) {
 
       <div className="text-center px-2 sm:px-0">
         <p className="text-2xl sm:text-3xl font-bold">Melbourne Connect</p>
-        <p className="text-sm sm:text-base mt-2">
+        {/* <p className="text-sm sm:text-base mt-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        </p>
+        </p> */}
         <a
           className="underline text-blue-300 hover:text-blue-500 block mt-2"
           href="https://maps.app.goo.gl/bXN81M6b6rNDD6nCA"

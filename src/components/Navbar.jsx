@@ -74,7 +74,7 @@ function Navbar() {
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
           {[
-            { id: "Hero", label: "About" },
+            { id: "hero", label: "About" },
             // { id: "agenda", label: "Agenda" },
             // { id: "register", label: "Register" },
             { id: "support", label: "Supporter" },

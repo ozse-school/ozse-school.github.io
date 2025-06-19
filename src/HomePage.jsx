@@ -6,6 +6,7 @@ import Venue from "./HomePage/Venue";
 import Supporters from "./HomePage/Supporters";
 import ContactUs from "./HomePage/ContactUs";
 import Team from "./HomePage/Team";
+import Content from "./HomePage/Content.jsx";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <Hero id="hero" />
       {/* <Agenda id="agenda" /> */}
       {/* <RegisterBanner id="register" /> */}
+      <Content id="content" />
       <Venue id="venue" />
       <Supporters id="support" />
       <Team id="team" />

@@ -36,26 +36,7 @@ function Hero({id}) {
             The rapid rise of AI-embedded software has widened the gap between academia and industry and highlighted a shortage of software engineers skilled in AI. Addressing this challenge requires closer collaboration between academia and industry to share knowledge, tackle shared issues, and train the next generation to build responsible, reliable software in the AI era.
           </p>
           <br />
-          <p>
-            The <b>Australian Summer School on Software Engineering (OzSE)</b> aims to tackle these challenges by serving as a three-way connection hub that brings together graduate students, researchers, and industry leaders across Australasia. OzSE will serve as a platform to foster collaboration, focusing on practical and emerging issues in AI-embedded software engineering. Through a dynamic program of keynote speakers, talks, and networking sessions, OzSE aims to meet the following objectives:
-          </p>
-          <br />
-          <div className="pl-4 md:pl-12">
-            <ul className="list-decimal">
-              <li>
-                <b>Foster meaningful academic-industry engagement</b> to tackle real-world software engineering challenges.
-              </li>
-              <li>
-                <b>Advanced knowledge and skills</b> through expert-led lectures, hands-on workshops, and applied learning experiences.
-              </li>
-              <li>
-                <b>Build a SE community to</b> foster long-term collaboration to create capacity in the Australasian software engineering ecosystem.
-              </li>
-              <li>
-                <b>Inspire the next generation</b> to pursue impactful research and careers in software engineering.
-              </li>
-            </ul>
-          </div>
+
         </div>
       </div>
     </div>

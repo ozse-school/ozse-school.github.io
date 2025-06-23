@@ -12,7 +12,7 @@ function Team() {
 
     return (
         <div className="flex flex-col justify-center items-center px-4 py-8">
-            <div className="mb-8 text-center">
+            <div className="mb-8 text-left w-full max-w-6xl">
                 <p className="text-3xl sm:text-4xl font-bold">OzSE2026 Team</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">

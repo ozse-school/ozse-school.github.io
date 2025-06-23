@@ -23,8 +23,8 @@ function Supporters({ id }) {
   };
 
   return (
-    <div className="bg-white p-8  mb-12 max-w-6xl mx-auto text-center" id={id}>
-      <h2 className="text-4xl font-bold mb-8">Supporters</h2>
+    <div className="bg-white py-8  mb-12 max-w-6xl mx-auto text-center" id={id}>
+      <h2 className="text-left text-4xl font-bold mb-8">Supporters</h2>
 
       <div className="hidden md:grid grid-cols-3 gap-6 mb-8 flex justify-center items-center">
         {supporters.map((supporter, i) => (

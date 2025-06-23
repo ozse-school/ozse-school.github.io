@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Supporters({ id }) {
   const supporters = [
-    { Name: "SigSoft", image: "./sponsor/01-acm-sigsoft.png" },
-    { Name: "University OF Melbourne", image: "./sponsor/02-the-university-of-melbourne.png" },
-    { Name: "Monash University", image: "./sponsor/03-monash-university.png" },
+    { Name: "SigSoft", image: `${import.meta.env.BASE_URL}/sponsor/01-acm-sigsoft.png` },
+    { Name: "University OF Melbourne", image: `${import.meta.env.BASE_URL}/sponsor/02-the-university-of-melbourne.png` },
+    { Name: "Monash University", image: `${import.meta.env.BASE_URL}/sponsor/03-monash-university.png` },
   ];
 
   const mobileSettings = {

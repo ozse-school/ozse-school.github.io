@@ -1,9 +1,10 @@
 import React from "react";
 
 function History({ id }) {
+
     return (
         <div
-            className="flex flex-col items-center justify-center space-y-8 px-4"
+            className={`"flex flex-col items-center justify-center space-y-8 px-4"`}
             id={id}
         >
             <div className="flex flex-col pt-12 pb-6 space-y-8 md:px-4 md:text-lg max-w-6xl w-full">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const scrollToCenter = (id, setIsOpen) => {
   const element = document.getElementById(id);
@@ -35,24 +35,26 @@ function MainPageMenu(setIsOpen) {
           {label}
         </button>
       }
-    return <a
-        key={id}
-        href={to}
-        className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
-    >
-      {label}
-    </a>
+      else{
+        return <a
+            key={id}
+            href={to}
+            className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
+        >
+          {label}
+        </a>
+      }
   })
 }
 
-function OtherPageMenu() {
+function OtherPageMenu(navigate) {
   return [
     { id: "home", label: "Home", to: "/" },
     { id: "history", label: "History", to: "/history" }
   ].map(({ id, label, to }) => (
       <a
           key={id}
-          href={to}
+          onClick={() => navigate(to)}
           className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
       >
         {label}
@@ -63,10 +65,9 @@ function OtherPageMenu() {
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isTop, setIsTop] = useState(true);
-
   const location = useLocation();
-  const currentPath = location.pathname;
-  const isHomePage = currentPath === "/"
+  const navigate = useNavigate()
+
 
   useEffect(() => {
     const onScroll = () => {
@@ -81,7 +82,7 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3 shadow-md transition-colors duration-300 ${
         isTop ? "bg-transparent text-white" : "bg-[#000F46] text-white"
-      } ${!isHomePage && "!bg-[#000F46]"}`}
+      } ${location.pathname !== "/" && "!bg-[#000F46]"}`}
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
         <div className="text-xl font-bold select-none"></div>
@@ -118,7 +119,7 @@ function Navbar() {
         </button>
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
-          { isHomePage ? MainPageMenu(setIsOpen) : OtherPageMenu() }
+          { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(navigate) }
         </div>
       </div>
 

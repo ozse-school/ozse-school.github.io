@@ -39,13 +39,14 @@ function MainPageMenu(setIsOpen) {
         return <Link
             key={id}
             to={to}
-            className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
+            onClick={() => setIsOpen(false)}
+            className="text-center px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
         >{label}</Link>
       }
   })
 }
 
-function OtherPageMenu() {
+function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
     { id: "history", label: "History", to: "/history" }
@@ -53,7 +54,8 @@ function OtherPageMenu() {
       <Link
           key={id}
           to={to}
-          className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
+          onClick={() => setIsOpen(false)}
+          className="text-center px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
       >{label}</Link>
   ))
 }
@@ -115,7 +117,7 @@ function Navbar() {
         </button>
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
-          { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(navigate) }
+          { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
         </div>
       </div>
 
@@ -129,21 +131,7 @@ function Navbar() {
         style={{ transformOrigin: "top" }}
       >
         <div className="flex flex-col px-4 py-3 space-y-2">
-          {[
-            { id: "about", label: "About" },
-            // { id: "agenda", label: "Agenda" },
-            // { id: "register", label: "Register" },
-            { id: "support", label: "Supporter" },
-            // { id: "contact", label: "Contact" },
-          ].map(({ id, label }) => (
-            <button
-              key={id}
-              onClick={() => scrollToCenter(id)}
-              className="w-full text-left px-4 py-3 hover:bg-white/10 rounded focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              {label}
-            </button>
-          ))}
+          { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
         </div>
       </div>
     </nav>

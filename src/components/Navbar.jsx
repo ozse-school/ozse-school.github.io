@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link } from "react-router-dom";
 
 const scrollToCenter = (id, setIsOpen) => {
   const element = document.getElementById(id);
@@ -36,29 +36,25 @@ function MainPageMenu(setIsOpen) {
         </button>
       }
       else{
-        return <a
+        return <Link
             key={id}
-            href={to}
+            to={to}
             className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
-        >
-          {label}
-        </a>
+        >{label}</Link>
       }
   })
 }
 
-function OtherPageMenu(navigate) {
+function OtherPageMenu() {
   return [
     { id: "home", label: "Home", to: "/" },
     { id: "history", label: "History", to: "/history" }
   ].map(({ id, label, to }) => (
-      <a
+      <Link
           key={id}
-          onClick={() => navigate(to)}
+          to={to}
           className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
-      >
-        {label}
-      </a>
+      >{label}</Link>
   ))
 }
 

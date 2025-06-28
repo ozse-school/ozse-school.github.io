@@ -1,12 +1,13 @@
 import React from "react";
 import Hero from "./HomePage/Hero";
-import Agenda from "./HomePage/Agenda";
-import RegisterBanner from "./HomePage/RegisterBanner";
 import Venue from "./HomePage/Venue";
 import Supporters from "./HomePage/Supporters";
-import ContactUs from "./HomePage/ContactUs";
 import Team from "./HomePage/Team";
 import Content from "./HomePage/Content.jsx";
+
+// import Agenda from "./HomePage/Agenda";
+// import RegisterBanner from "./HomePage/RegisterBanner";
+// import ContactUs from "./HomePage/ContactUs";
 
 function HomePage() {
   return (

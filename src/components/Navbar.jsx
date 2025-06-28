@@ -77,7 +77,7 @@ function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 px-4 py-3 shadow-md transition-colors duration-300 ${
-        isTop ? "bg-transparent text-white" : "bg-[#000F46] text-white"
+        isTop ? "md:bg-transparent bg-[#000F46] text-white" : "bg-[#000F46] text-white"
       } ${location.pathname !== "/" && "!bg-[#000F46]"}`}
     >
       <div className="flex items-center justify-between max-w-6xl mx-auto">
@@ -121,8 +121,8 @@ function Navbar() {
 
       <div
         id="mobile-menu"
-        className={`md:hidden fixed top-14 left-0 w-full ${
-          isTop ? "bg-transparent" : "bg-[#000F46]/95 backdrop-blur-sm"
+        className={`md:hidden fixed top-10 left-0 w-full ${
+          isTop ? "md:bg-transparent bg-[#000F46]" : "bg-[#000F46]/95 backdrop-blur-sm"
         } shadow-lg transform transition-transform duration-300 ease-in-out origin-top ${
           isOpen ? "scale-y-100" : "scale-y-0"
         }`}
@@ -131,10 +131,10 @@ function Navbar() {
         <div className="flex flex-col px-4 py-3 space-y-2">
           {[
             { id: "about", label: "About" },
-            { id: "agenda", label: "Agenda" },
-            { id: "register", label: "Register" },
+            // { id: "agenda", label: "Agenda" },
+            // { id: "register", label: "Register" },
             { id: "support", label: "Supporter" },
-            { id: "contact", label: "Contact" },
+            // { id: "contact", label: "Contact" },
           ].map(({ id, label }) => (
             <button
               key={id}

@@ -34,7 +34,7 @@ function Supporters({ id }) {
         ))}
       </div>
 
-      <div className="md:hidden mb-8">
+      <div className="md:hidden mb-8 overflow-hidden">
         <Slider {...mobileSettings}>
           {supporters.map((supporter, i) => (
             <div key={i} className="flex flex-col items-center p-2">

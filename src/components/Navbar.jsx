@@ -24,7 +24,8 @@ function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "About" },
     { id: "support", label: "Supporter" },
-    { id: "history", label: "History", to: "/history" }
+    { id: "history", label: "History", to: "/history" },
+    { id: "team", label: "Team", to: "/team" }
   ].map(({ id, label, to }) => {
       if(to === undefined) {
         return <button
@@ -49,7 +50,8 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
-    { id: "history", label: "History", to: "/history" }
+    { id: "history", label: "History", to: "/history" },
+    { id: "team", label: "Team", to: "/team" }
   ].map(({ id, label, to }) => (
       <Link
           key={id}

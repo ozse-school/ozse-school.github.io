@@ -41,22 +41,22 @@ const speakers = [
         organization: "Monash University",
         profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
     },
-    {
-        topic: "",
-        name: "To be announced",
-        position: "To be announced",
-        group: "",
-        organization: "Atlassian",
-        profileImage: "https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=1756339200&v=beta&t=43sGwXT6PZa1xN_zQ-64ck4TJTMivPImJYwY5tqV2-g",
-    },
-    {
-        topic: "",
-        name: "To be announced",
-        position: "To be announced",
-        group: "",
-        organization: "Transurban",
-        profileImage: "https://media.licdn.com/dms/image/v2/C4D0BAQELYJ1Z0b4Rrw/company-logo_200_200/company-logo_200_200/0/1631303830154?e=1756339200&v=beta&t=_sa1ZknfQDH9pwvj0lL9nCsVcPq1Bvb50sD4G-QaY2I",
-    },
+    // {
+    //     topic: "",
+    //     name: "To be announced",
+    //     position: "To be announced",
+    //     group: "",
+    //     organization: "Atlassian",
+    //     profileImage: "https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=1756339200&v=beta&t=43sGwXT6PZa1xN_zQ-64ck4TJTMivPImJYwY5tqV2-g",
+    // },
+    // {
+    //     topic: "",
+    //     name: "To be announced",
+    //     position: "To be announced",
+    //     group: "",
+    //     organization: "Transurban",
+    //     profileImage: "https://media.licdn.com/dms/image/v2/C4D0BAQELYJ1Z0b4Rrw/company-logo_200_200/company-logo_200_200/0/1631303830154?e=1756339200&v=beta&t=_sa1ZknfQDH9pwvj0lL9nCsVcPq1Bvb50sD4G-QaY2I",
+    // },
 ];
 
 const SpeakersSection = () => {

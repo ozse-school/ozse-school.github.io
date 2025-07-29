@@ -59,9 +59,9 @@ const speakers = [
     // },
 ];
 
-const SpeakersSection = () => {
+const SpeakersSection = ({id}) => {
     return (
-        <section className="pt-24 pb-6 bg-gradient-to-br from-background via-background to-muted/30 relative overflow-hidden">
+        <section id={id} className="pt-24 pb-6 bg-gradient-to-br from-background via-background to-muted/30 relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 opacity-30">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />

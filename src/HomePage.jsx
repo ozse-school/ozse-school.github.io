@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "./HomePage/Hero";
 import Venue from "./HomePage/Venue";
 import Supporters from "./HomePage/Supporters";
-import Team from "./HomePage/Team";
 import Content from "./HomePage/Content.jsx";
 import SpeakersSection from "./Speaker.jsx";
 
@@ -17,7 +16,7 @@ function HomePage() {
       {/* <Agenda id="agenda" /> */}
       {/* <RegisterBanner id="register" /> */}
       <Content id="content" />
-      <SpeakersSection />
+      <SpeakersSection id="speaker" />
       <Venue id="venue" />
       <Supporters id="support" />
       {/*<Team id="team" />*/}

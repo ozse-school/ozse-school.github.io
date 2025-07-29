@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
-const scrollToCenter = (id, setIsOpen) => {
+export const scrollToCenter = (id, setIsOpen) => {
   const element = document.getElementById(id);
   if (!element) return;
 
@@ -22,8 +22,9 @@ const scrollToCenter = (id, setIsOpen) => {
 
 function MainPageMenu(setIsOpen) {
   return [
-    { id: "hero", label: "About" },
+    { id: "hero", label: "Home" },
     { id: "support", label: "Supporter" },
+    { id: "speaker", label: "Speaker" },
     { id: "history", label: "History", to: "/history" },
     { id: "team", label: "Team", to: "/team" }
   ].map(({ id, label, to }) => {
@@ -50,6 +51,8 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
+    { id: "support", label: "Supporter", to: "/#support" },
+    { id: "speaker", label: "Speaker", to: "/#speaker" },
     { id: "history", label: "History", to: "/history" },
     { id: "team", label: "Team", to: "/team" }
   ].map(({ id, label, to }) => (
@@ -66,7 +69,16 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const location = useLocation();
-  const navigate = useNavigate()
+
+  const { hash} = useLocation()
+
+  useEffect(() => {
+    if(hash) {
+
+      const id = hash.replace("/^#/", '').replace("#", '')
+      scrollToCenter(id, setIsOpen)
+    }
+  }, [hash])
 
 
   useEffect(() => {

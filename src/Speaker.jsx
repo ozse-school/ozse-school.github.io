@@ -3,7 +3,7 @@ import SpeakerCard from "./components/SpeakerCard.jsx";
 const speakers = [
     {
         topic: "",
-        name: "Dr. Jon Whittle",
+        name: "Professor Jon Whittle",
         position: "Managing Director",
         group: "",
         organization: "CSIRO's Data61",
@@ -19,7 +19,7 @@ const speakers = [
     },
     {
         topic: "",
-        name: "Qinghua Lu",
+        name: "Dr. Qinghua Lu",
         position: "Group Leader",
         group: "Software System Research Group",
         organization: "CSIRO's Data61",
@@ -35,11 +35,19 @@ const speakers = [
     },
     {
         topic: "",
-        name: "Naim Rastgoo",
-        position: "Senior Research Fellow",
+        name: "Dr. Naim Rastgoo",
+        position: "CTO & Head of AI AIHUB",
         group: "",
         organization: "Monash University",
         profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
+    },
+    {
+        topic: "",
+        name: "Professor Aldeida Aleti",
+        position: "Professor of Software Engineering",
+        group: "",
+        organization: "Monash University",
+        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQG4qbUzY-URLQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698375370752?e=1756944000&v=beta&t=oMjw8okDEA3et8_mBmVcOqpV3T36ouwXl09fIQBKEKI",
     },
     // {
     //     topic: "",
@@ -49,14 +57,14 @@ const speakers = [
     //     organization: "Atlassian",
     //     profileImage: "https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=1756339200&v=beta&t=43sGwXT6PZa1xN_zQ-64ck4TJTMivPImJYwY5tqV2-g",
     // },
-    // {
-    //     topic: "",
-    //     name: "To be announced",
-    //     position: "To be announced",
-    //     group: "",
-    //     organization: "Transurban",
-    //     profileImage: "https://media.licdn.com/dms/image/v2/C4D0BAQELYJ1Z0b4Rrw/company-logo_200_200/company-logo_200_200/0/1631303830154?e=1756339200&v=beta&t=_sa1ZknfQDH9pwvj0lL9nCsVcPq1Bvb50sD4G-QaY2I",
-    // },
+    {
+        topic: "",
+        name: "Dr. Joey (Joselito) Chua",
+        position: "Head of AI Engineering & Operations",
+        group: "",
+        organization: "Transurban",
+        profileImage: "https://media.licdn.com/dms/image/v2/C5603AQFI45LFRfCF-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517573207618?e=1756944000&v=beta&t=RyST_VzUUIZ39IxvUxBZTfZdHVxc8SFxbn530XcFWCs",
+    },
 ];
 
 const SpeakersSection = ({id}) => {

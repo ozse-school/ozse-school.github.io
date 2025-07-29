@@ -4,6 +4,7 @@ import Venue from "./HomePage/Venue";
 import Supporters from "./HomePage/Supporters";
 import Content from "./HomePage/Content.jsx";
 import SpeakersSection from "./Speaker.jsx";
+import Team from "./HomePage/Team.jsx";
 
 // import Agenda from "./HomePage/Agenda";
 // import RegisterBanner from "./HomePage/RegisterBanner";
@@ -19,7 +20,7 @@ function HomePage() {
       <SpeakersSection id="speaker" />
       <Venue id="venue" />
       <Supporters id="support" />
-      {/*<Team id="team" />*/}
+      <Team id="team" />
       {/* <ContactUs id="contact" /> */}
     </div>
   );

@@ -57,7 +57,7 @@ function Content({ id }) {
                                 <b>PhD Students:</b> Deepen your technical skills in software engineering and AI, and learn how to apply them to real-world, industry-relevant problems.
                             </li>
                             <li>
-                                <b>Early-Career Researchers:</b> Expand your expertise in emerging topics, strengthen your academic profile, and build long-term collaborations with leading researchers and practitioners.
+                                <b>Academics and Researchers:</b> Expand your expertise in emerging topics, strengthen your academic profile, and build long-term collaborations with leading industry and practitioners.
                             </li>
                             <li>
                                 <b>Industry Practitioners:</b> Gain insight into state-of-the-art academic developments, explore how research can be applied to your organisation’s challenges, and connect with a network of innovators at the research–practice interface.

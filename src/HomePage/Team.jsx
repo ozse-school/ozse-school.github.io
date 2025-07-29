@@ -13,7 +13,7 @@ function Team() {
     return (
         <div className="flex flex-col justify-center items-center px-4 py-8">
             <div className="mb-8 text-left w-full max-w-6xl">
-                <p className="text-3xl sm:text-4xl font-bold">OzSE2026 Team</p>
+                <p className="text-3xl sm:text-4xl font-bold">OzSE2026 Organizer</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
                 {TeamMember.map((member, index) => (
@@ -21,7 +21,7 @@ function Team() {
                         <img
                             src={member.ProfilePic}
                             alt={member.Name}
-                            className="w-full max-w-[250px] aspect-square rounded-xl object-cover mb-4"
+                            className="w-full max-w-[120px] aspect-square rounded-xl object-cover mb-4"
                         />
                         <h3 className="text-lg font-semibold">{member.Name}</h3>
                         <p className="text-sm text-gray-500">{member.Pronoun}</p>

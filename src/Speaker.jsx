@@ -1,4 +1,5 @@
 import SpeakerCard from "./components/SpeakerCard.jsx";
+import React from "react";
 
 const speakers = [
     {
@@ -75,14 +76,15 @@ const SpeakersSection = ({id}) => {
                 <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
                 <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
             </div>
-
+            <div className="flex flex-col justify-center items-center">
+                <div className="max-w-6xl w-full">
+                    <p className="text-3xl sm:text-4xl font-bold text-left">Speakers</p>
+                </div>
+            </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 {/* Enhanced header */}
                 <div className="text-center mb-20">
                     <div className="inline-flex items-center px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-6">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wide">
-              Meet Our Experts
-            </span>
                     </div>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                         Learn from world-renowned experts in software engineering and AI who will share their

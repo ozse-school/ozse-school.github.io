@@ -1,6 +1,6 @@
 import React from "react";
 
-function Team() {
+function Team({ id }) {
     const TeamMember = [
         { Name: "Dr. Patanamon Thongtanunam", ProfilePic: `/team/patanamon.webp`, Pronoun: "(she/her)", CurrentPosition: "Senior Lecturer, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
         { Name: "Dr. Kla Tantithamthavorn", ProfilePic: `/team/chakkrit.webp`, Pronoun: "(he/him)", CurrentPosition: "Associate Professor, Department of Software Systems & Cybersecurity, Monash University", ConferencePosition: "" },
@@ -11,7 +11,7 @@ function Team() {
     ];
 
     return (
-        <div className="flex flex-col justify-center items-center px-4 py-8">
+        <div id={id} className="flex flex-col justify-center items-center px-4 py-8">
             <div className="mb-8 text-left w-full max-w-6xl">
                 <p className="text-3xl sm:text-4xl font-bold">OzSE2026 Organizer</p>
             </div>

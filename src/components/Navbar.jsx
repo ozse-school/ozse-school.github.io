@@ -23,10 +23,10 @@ export const scrollToCenter = (id, setIsOpen) => {
 function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "Home" },
-    { id: "support", label: "Supporter" },
-    { id: "speaker", label: "Speaker" },
+    { id: "speaker", label: "Speakers" },
+    { id: "support", label: "Supporters" },
+    { id: "team", label: "Organizers" },
     { id: "history", label: "History", to: "/history" },
-    // { id: "team", label: "Organizer" }
   ].map(({ id, label, to }) => {
       if(to === undefined) {
         return <button
@@ -51,10 +51,10 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
-    { id: "support", label: "Supporter", to: "/#support" },
-    { id: "speaker", label: "Speaker", to: "/#speaker" },
+    { id: "speaker", label: "Speakers", to: "/#speaker" },
+    { id: "support", label: "Supporters", to: "/#support" },
+    { id: "team", label: "Organizers", to: "/#team" },
     { id: "history", label: "History", to: "/history" },
-    // { id: "team", label: "Team", to: "/team" }
   ].map(({ id, label, to }) => (
       <Link
           key={id}

@@ -36,28 +36,12 @@ const speakers = [
     },
     {
         topic: "",
-        name: "Dr. Naim Rastgoo",
-        position: "CTO & Head of AI AIHUB",
-        group: "",
-        organization: "Monash University",
-        profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
-    },
-    {
-        topic: "",
         name: "Professor Aldeida Aleti",
         position: "Professor of Software Engineering",
         group: "",
         organization: "Monash University",
         profileImage: "https://media.licdn.com/dms/image/v2/D5603AQG4qbUzY-URLQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698375370752?e=1756944000&v=beta&t=oMjw8okDEA3et8_mBmVcOqpV3T36ouwXl09fIQBKEKI",
     },
-    // {
-    //     topic: "",
-    //     name: "To be announced",
-    //     position: "To be announced",
-    //     group: "",
-    //     organization: "Atlassian",
-    //     profileImage: "https://media.licdn.com/dms/image/v2/D4E0BAQGeyLL6crkJKg/company-logo_200_200/company-logo_200_200/0/1735593604612/atlassian_logo?e=1756339200&v=beta&t=43sGwXT6PZa1xN_zQ-64ck4TJTMivPImJYwY5tqV2-g",
-    // },
     {
         topic: "",
         name: "Dr. Joey (Joselito) Chua",
@@ -65,6 +49,14 @@ const speakers = [
         group: "",
         organization: "Transurban",
         profileImage: "https://media.licdn.com/dms/image/v2/C5603AQFI45LFRfCF-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517573207618?e=1756944000&v=beta&t=RyST_VzUUIZ39IxvUxBZTfZdHVxc8SFxbn530XcFWCs",
+    },
+    {
+        topic: "",
+        name: "Dr. Naim Rastgoo",
+        position: "CTO & Head of AI",
+        group: "",
+        organization: "AIHUB",
+        profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
     },
 ];
 

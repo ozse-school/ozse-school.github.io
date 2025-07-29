@@ -11,8 +11,8 @@ function HistoryPage() {
 
   return (
     <div className={`${!isHomePage && "mt-12"}`}>
-        <AboutEvent/>
-        <Attending/>
+        {/*<AboutEvent/>*/}
+        {/*<Attending/>*/}
         <History/>
     </div>
   );

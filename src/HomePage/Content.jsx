@@ -11,7 +11,7 @@ function Content({ id }) {
             >
 
                 <p>
-                    The <b>Australian Summer School on Software Engineering (OzSE)</b> aims to tackle these challenges by serving as a three-way connection hub that brings together graduate students, researchers, and industry leaders across Australasia. OzSE will serve as a platform to foster collaboration, focusing on practical and emerging issues in AI-embedded software engineering. Through a dynamic program of keynote speakers, talks, and networking sessions, OzSE aims to meet the following objectives:
+                    The <b>Australian Summer School in Software Engineering (OzSE)</b> aims to tackle these challenges by serving as a three-way connection hub that brings together graduate students, researchers, and industry leaders across Australasia. OzSE will serve as a platform to foster collaboration, focusing on practical and emerging issues in AI-embedded software engineering. Through a dynamic program of keynote speakers, talks, and networking sessions, OzSE aims to meet the following objectives:
                 </p>
                 <br />
                 <div className="pl-4 md:pl-12">

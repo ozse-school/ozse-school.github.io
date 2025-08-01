@@ -13,7 +13,7 @@ function Hero({id}) {
       id={id}
     >
       <div className="max-w-4xl text-start rounded">
-        <p className="text-4xl md:text-6xl font-bold mb-4"> Australian Summer School on Software Engineering (OzSE) </p>
+        <p className="text-4xl md:text-6xl font-bold mb-4"> Australian Summer School in Software Engineering (OzSE) </p>
           <p className="text-lg md:text-2xl mb-4">
             09 - 10 February 2026, Melbourne Connect.
           </p>

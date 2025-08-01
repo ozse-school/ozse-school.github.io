@@ -17,9 +17,9 @@ function Hero({id}) {
           <p className="text-lg md:text-2xl mb-4">
             09 - 10 February 2026, Melbourne Connect.
           </p>
-          <button className="mt-8 px-6 py-3 rounded-full bg-transperent border-2 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors">
-            Register Now
-          </button>
+          {/*<button className="mt-8 px-6 py-3 rounded-full bg-transperent border-2 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors">*/}
+          {/*  Register Now*/}
+          {/*</button>*/}
       </div>
 
       <div
@@ -37,6 +37,19 @@ function Hero({id}) {
           </p>
           <br />
 
+        </div>
+        <div>
+         <h3 className="text-2xl sm:text-4xl font-bold">
+           We are calling for Early Career Researcher (ECR) & Spotlight Talks!
+         </h3>
+          <div className="mt-8">
+            <a
+                href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
+                className="px-6 py-3 rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+            >
+              Apply for ECR & Spotlight
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -132,6 +132,12 @@ function Navbar() {
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
           { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
+          <a
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
+              className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          >
+            Apply for ECR & Spotlight
+          </a>
         </div>
       </div>
 
@@ -146,7 +152,14 @@ function Navbar() {
       >
         <div className="flex flex-col px-4 py-3 space-y-2">
           { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
+          <a
+              href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
+              className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          >
+            Apply for ECR & Spotlight
+          </a>
         </div>
+
       </div>
     </nav>
   );

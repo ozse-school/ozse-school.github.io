@@ -138,6 +138,12 @@ function Navbar() {
           >
             Apply for ECR & Spotlight
           </a>
+          <Link
+              to={'/registration'}
+              className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          >
+            Registration
+          </Link>
         </div>
       </div>
 
@@ -158,6 +164,12 @@ function Navbar() {
           >
             Apply for ECR & Spotlight
           </a>
+          <Link
+              to={'/registration'}
+              className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          >
+            Registration
+          </Link>
         </div>
 
       </div>

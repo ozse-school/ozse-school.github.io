@@ -58,6 +58,14 @@ const speakers = [
         organization: "AIHUB",
         profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
     },
+    {
+        topic: "",
+        name: "A/Prof Scott Barnett",
+        position: "Deputy Head",
+        group: "Translational Research and Commercialisation",
+        organization: "Deakin University",
+        profileImage: "https://experts.deakin.edu.au/42177-scott-barnett/thumbnail",
+    }
 ];
 
 const SpeakersSection = ({id}) => {

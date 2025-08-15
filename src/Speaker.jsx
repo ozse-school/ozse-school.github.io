@@ -84,8 +84,6 @@ const SpeakersSection = ({id}) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 {/* Enhanced header */}
                 <div className="text-center mb-20">
-                    <div className="inline-flex items-center px-6 py-3 bg-primary/10 rounded-full border border-primary/20 mb-6">
-                    </div>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                         Learn from world-renowned experts in software engineering and AI who will share their
                         groundbreaking insights and transformative experiences at OzSE 2026.

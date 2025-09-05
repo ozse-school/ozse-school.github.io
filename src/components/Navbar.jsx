@@ -139,7 +139,7 @@ function Navbar() {
             Apply for ECR & Spotlight
           </a>
           <Link
-              to={'/registration'}
+              to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
               className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
           >
             Registration
@@ -165,7 +165,7 @@ function Navbar() {
             Apply for ECR & Spotlight
           </a>
           <Link
-              to={'/registration'}
+              to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
               className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
           >
             Registration

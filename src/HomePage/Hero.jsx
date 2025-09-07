@@ -47,7 +47,7 @@ function Hero({id}) {
                 href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
                 className="px-6 py-3 rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
             >
-              Apply for ECR & Spotlight
+              Submit for a Spotlight Talk
             </a>
           </div>
         </div>

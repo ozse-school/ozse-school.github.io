@@ -136,7 +136,7 @@ function Navbar() {
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
               className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
           >
-            Apply for ECR & Spotlight
+            Submit for a Spotlight Talk
           </a>
           <Link
               to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
@@ -162,7 +162,7 @@ function Navbar() {
               href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
               className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
           >
-            Apply for ECR & Spotlight
+            Submit for a Spotlight Talk
           </a>
           <Link
               to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}

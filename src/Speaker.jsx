@@ -8,7 +8,7 @@ const speakers = [
         position: "Managing Director",
         group: "",
         organization: "CSIRO's Data61",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHyqtuXfIPaOQ/profile-displayphoto-shrink_800_800/B56ZcpLsN2GoAc-/0/1748742620619?e=1756339200&v=beta&t=y1wuAun747n4R8OwhoerPCJ2CIRbWfHzraxOm2hfJgI",
+        profileImage: "/speaker/jon.png",
     },
     {
         topic: "",
@@ -16,7 +16,7 @@ const speakers = [
         position: "Director of Education",
         group: "Software Systems and Cybersecurity",
         organization: "Monash University",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQHmuAOZZAZOHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681948537270?e=1756339200&v=beta&t=2CZJ6mpXg3bEJDs-EBYeIOuJLX4ZNCAPxACfy7DMm6M",
+        profileImage: "/speaker/chetan.jpg",
     },
     {
         topic: "",
@@ -24,7 +24,7 @@ const speakers = [
         position: "Group Leader",
         group: "Software System Research Group",
         organization: "CSIRO's Data61",
-        profileImage: "https://i0.wp.com/research.csiro.au/scs/wp-content/uploads/sites/373/2021/09/QinghuaLu_Photo.jpg?resize=150%2C150&ssl=1",
+        profileImage: "/speaker/qinghua.jpg",
     },
     {
         topic: "",
@@ -32,7 +32,7 @@ const speakers = [
         position: "Senior Security Consultant",
         group: "Artificial Intelligence",
         organization: "NBN",
-        profileImage: "https://cdn.prod.website-files.com/67a009cc4f974824eabac86c/684141692a9ab07195e42bad_7157bc391e4641d8bcc802379740eac4.avif",
+        profileImage: "/speaker/ben.avif",
     },
     {
         topic: "",
@@ -40,7 +40,7 @@ const speakers = [
         position: "Professor of Software Engineering",
         group: "",
         organization: "Monash University",
-        profileImage: "https://media.licdn.com/dms/image/v2/D5603AQG4qbUzY-URLQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698375370752?e=1756944000&v=beta&t=oMjw8okDEA3et8_mBmVcOqpV3T36ouwXl09fIQBKEKI",
+        profileImage: "/speaker/aldeida.jpg",
     },
     {
         topic: "",
@@ -48,7 +48,7 @@ const speakers = [
         position: "Head of AI Engineering & Operations",
         group: "",
         organization: "Transurban",
-        profileImage: "https://media.licdn.com/dms/image/v2/C5603AQFI45LFRfCF-Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517573207618?e=1756944000&v=beta&t=RyST_VzUUIZ39IxvUxBZTfZdHVxc8SFxbn530XcFWCs",
+        profileImage: "/speaker/joey.jpeg",
     },
     {
         topic: "",
@@ -56,7 +56,7 @@ const speakers = [
         position: "CTO & Head of AI",
         group: "",
         organization: "AIHUB",
-        profileImage: "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=frUTKSgAAAAJ&citpid=2",
+        profileImage: "/speaker/naim.jpeg",
     },
     {
         topic: "",

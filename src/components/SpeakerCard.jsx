@@ -21,9 +21,9 @@ const SpeakerCard = ({ speaker }) => {
                                     src={speaker.profileImage}
                                     alt={`${speaker.name} profile`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                                    onError={(e) => {
-                                        e.currentTarget.src = '/placeholder.svg';
-                                    }}
+                                    // onError={(e) => {
+                                    //     e.currentTarget.src = '/placeholder.svg';
+                                    // }}
                                 />
                             </div>
                         </div>

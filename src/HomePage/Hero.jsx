@@ -40,9 +40,15 @@ function Hero({id}) {
         </div>
         <div>
          <h3 className="text-2xl sm:text-4xl font-bold">
-           We are calling for Early Career Researcher (ECR) & Spotlight Talks!
+           We are calling for Emerging Research Spotlight Talks!
          </h3>
+          <p className="mt-2 text-lg leading-8">
+            Do you have exciting work you'd like to showcase? We invite submissions for our upcoming Emerging Research Spotlight Talks session!<br />
+            <b>Call closes:</b> End of October 2025<br />
+            <b>Selection & Notification:</b> Due to limited available spots, submissions will go through a selection process. Notifications will be sent out around the end of November 2025.
+          </p>
           <div className="mt-8">
+
             <a
                 href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
                 className="px-6 py-3 rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"

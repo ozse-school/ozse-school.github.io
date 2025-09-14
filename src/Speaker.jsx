@@ -60,12 +60,60 @@ const speakers = [
     },
     {
         topic: "",
-        name: "A/Prof Scott Barnett",
+        name: "A/Professor Scott Barnett",
         position: "Deputy Head",
         group: "Translational Research and Commercialisation",
         organization: "Deakin University",
-        profileImage: "https://experts.deakin.edu.au/42177-scott-barnett/thumbnail",
-    }
+        profileImage: "/speaker/scott.jpeg",
+    },
+    {
+        topic: "",
+        name: "A/Professor Sherlock Licorish",
+        position: "Associate Professor",
+        group: "",
+        organization: "University of Otago",
+        profileImage: "/speaker/sherlock.jpg",
+    },
+    {
+        topic: "",
+        name: "A/Professor Jens Dietrich",
+        position: "Associate Professor",
+        group: "School of Engineering and Computer Science",
+        organization: "Victoria University of Wellington Te Herenga Waka",
+        profileImage: "/speaker/jens.png",
+    },
+    {
+        topic: "",
+        name: "A/Professor Kelly Blincoe",
+        position: "Associate Professor",
+        group: "Software Engineering Lab",
+        organization: "University of Auckland",
+        profileImage: "/speaker/kelly.png",
+    },
+    {
+        topic: "",
+        name: "Dr. Valerio Terragni",
+        position: "Senior Lecturer",
+        group: "",
+        organization: "University of Auckland",
+        profileImage: "/speaker/valerio.png",
+    },
+    {
+        topic: "",
+        name: "Yongqiang Tian",
+        position: "researcher",
+        group: "software engineering",
+        organization: "Monash University",
+        profileImage: "/speaker/yongqiang.jpg",
+    },
+    {
+        topic: "",
+        name: "Dr. Tingting Bi",
+        position: "Lecturer",
+        group: "Software Engineering",
+        organization: "University of Melbourne",
+        profileImage: "/speaker/tingting.jpeg",
+    },
 ];
 
 const SpeakersSection = ({id}) => {

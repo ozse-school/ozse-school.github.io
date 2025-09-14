@@ -114,6 +114,14 @@ const speakers = [
         organization: "University of Melbourne",
         profileImage: "/speaker/tingting.jpeg",
     },
+    {
+        topic: "",
+        name: "Professor Rashina Hoda",
+        position: "Professor",
+        group: "Software Engineering",
+        organization: "Monash University",
+        profileImage: "/speaker/rashina.jpg",
+    },
 ];
 
 const SpeakersSection = ({id}) => {

@@ -60,11 +60,11 @@ const speakers = [
     },
     {
         topic: "",
-        name: "Cristina Cifuentes",
+        name: "Dr. Cristina Cifuentes",
         position: "Vice President",
         group: "Software Assurance",
         organization: "Oracle",
-        profileImage: "/speaker/cristina.jpeg",
+        profileImage: "/speaker/cristina.jpg",
     },
     {
         topic: "",

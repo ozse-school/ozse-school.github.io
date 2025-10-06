@@ -12,11 +12,27 @@ const speakers = [
     },
     {
         topic: "",
-        name: "Dr. Chetan Arora",
-        position: "Director of Education",
-        group: "Software Systems and Cybersecurity",
-        organization: "Monash University",
-        profileImage: "/speaker/chetan.jpg",
+        name: "Dr. Cristina Cifuentes",
+        position: "Vice President",
+        group: "Software Assurance",
+        organization: "Oracle",
+        profileImage: "/speaker/cristina.jpg",
+    },
+    {
+        topic: "",
+        name: "Dr. Joey (Joselito) Chua",
+        position: "Head of AI Engineering & Operations",
+        group: "",
+        organization: "Transurban",
+        profileImage: "/speaker/joey.jpeg",
+    },
+    {
+        topic: "",
+        name: "A/Professor Jens Dietrich",
+        position: "Associate Professor",
+        group: "School of Engineering and Computer Science",
+        organization: "Victoria University of Wellington Te Herenga Waka",
+        profileImage: "/speaker/jens.png",
     },
     {
         topic: "",
@@ -42,14 +58,7 @@ const speakers = [
         organization: "Monash University",
         profileImage: "/speaker/aldeida.jpg",
     },
-    {
-        topic: "",
-        name: "Dr. Joey (Joselito) Chua",
-        position: "Head of AI Engineering & Operations",
-        group: "",
-        organization: "Transurban",
-        profileImage: "/speaker/joey.jpeg",
-    },
+    
     {
         topic: "",
         name: "Dr. Naim Rastgoo",
@@ -58,14 +67,7 @@ const speakers = [
         organization: "AIHUB",
         profileImage: "/speaker/naim.jpeg",
     },
-    {
-        topic: "",
-        name: "Dr. Cristina Cifuentes",
-        position: "Vice President",
-        group: "Software Assurance",
-        organization: "Oracle",
-        profileImage: "/speaker/cristina.jpg",
-    },
+    
     {
         topic: "",
         name: "A/Professor Scott Barnett",
@@ -82,13 +84,14 @@ const speakers = [
         organization: "University of Otago",
         profileImage: "/speaker/sherlock.jpg",
     },
+    
     {
         topic: "",
-        name: "A/Professor Jens Dietrich",
-        position: "Associate Professor",
-        group: "School of Engineering and Computer Science",
-        organization: "Victoria University of Wellington Te Herenga Waka",
-        profileImage: "/speaker/jens.png",
+        name: "Dr. Chetan Arora",
+        position: "Director of Education",
+        group: "Software Systems and Cybersecurity",
+        organization: "Monash University",
+        profileImage: "/speaker/chetan.jpg",
     },
     // {
     //     topic: "",

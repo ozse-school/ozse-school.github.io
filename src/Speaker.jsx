@@ -60,6 +60,14 @@ const speakers = [
     },
     {
         topic: "",
+        name: "Cristina Cifuentes",
+        position: "Vice President",
+        group: "Software Assurance",
+        organization: "Oracle",
+        profileImage: "/speaker/cristina.jpeg",
+    },
+    {
+        topic: "",
         name: "A/Professor Scott Barnett",
         position: "Deputy Head",
         group: "Translational Research and Commercialisation",

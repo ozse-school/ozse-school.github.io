@@ -9,6 +9,7 @@ function Supporters({ id }) {
     { Name: "University OF Melbourne", image: `/sponsor/02-the-university-of-melbourne.png` },
     { Name: "Monash University", image: `/sponsor/03-monash-university.png` },
     { Name: "Transurban", image: `/sponsor/04-transurban.png` },
+    { Name: "RMIT", image: `/sponsor/05-rmit.png` },
   ];
 
   const mobileSettings = {

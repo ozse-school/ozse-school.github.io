@@ -133,6 +133,30 @@ const speakers = [
         organization: "Monash University",
         profileImage: "/speaker/rashina.jpg",
     },
+    {
+        topic: "",
+        name: "Dr. Guowei Yang",
+        position: "Senior Lecturer",
+        group: "UQ Cyber Research Centre",
+        organization: "University of Queensland",
+        profileImage: "/speaker/guowei.jpeg",
+    },
+    {
+        topic: "",
+        name: "A/Professor James Zheng",
+        position: "ARC Future Fellow",
+        group: "",
+        organization: "Macquarie University",
+        profileImage: "/speaker/jameszheng.jpg",
+    },
+     {
+        topic: "",
+        name: "A/Professor Yulei Sui",
+        position: "ARC Future Fellow",
+        group: "",
+        organization: "University of New South Wales",
+        profileImage: "/speaker/yuleisui.png",
+    },
 ];
 
 const SpeakersSection = ({id}) => {

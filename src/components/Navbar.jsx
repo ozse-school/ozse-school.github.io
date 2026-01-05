@@ -23,6 +23,7 @@ export const scrollToCenter = (id, setIsOpen) => {
 function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "Home" },
+    { id: "program", label: "Program" },
     { id: "speaker", label: "Speakers" },
     { id: "support", label: "Supporters" },
     { id: "team", label: "Organizers" },
@@ -51,6 +52,7 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
+    { id: "program", label: "Program", to: "/#program" },
     { id: "speaker", label: "Speakers", to: "/#speaker" },
     { id: "support", label: "Supporters", to: "/#support" },
     { id: "team", label: "Organizers", to: "/#team" },
@@ -96,11 +98,9 @@ function Navbar() {
         isTop ? "md:bg-transparent bg-[#000F46] text-white" : "bg-[#000F46] text-white"
       } ${location.pathname !== "/" && "!bg-[#000F46]"}`}
     >
-      <div className="flex items-center justify-between max-w-6xl mx-auto">
-        <div className="text-xl font-bold select-none"></div>
-
+      <div className="flex items-center justify-center max-w-6xl mx-auto relative">
         <button
-          className="md:hidden focus:outline-none"
+          className="md:hidden absolute left-4 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
           aria-expanded={isOpen}
@@ -132,12 +132,6 @@ function Navbar() {
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
           { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
-          <a
-              href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
-              className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
-          >
-            Submit for a Spotlight Talk
-          </a>
           <Link
               to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
               className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
@@ -158,12 +152,6 @@ function Navbar() {
       >
         <div className="flex flex-col px-4 py-3 space-y-2">
           { location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen) }
-          <a
-              href="https://forms.office.com/Pages/ResponsePage.aspx?id=z_NbDvQft0aRdlLFOMIqTX0nBKmpNzJImlI7rIncr7RUNzFOQlEwNTc4OElaSDNVREJXUUtaOVFaVy4u"
-              className="px-6 py-3 text-sm text-center rounded-full bg-red-900 border-2 border-red-800 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
-          >
-            Submit for a Spotlight Talk
-          </a>
           <Link
               to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
               className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"

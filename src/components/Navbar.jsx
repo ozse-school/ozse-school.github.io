@@ -20,6 +20,24 @@ export const scrollToCenter = (id, setIsOpen) => {
   setIsOpen(false);
 };
 
+export const scrollToTop = (id, setIsOpen) => {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  const elementRect = element.getBoundingClientRect();
+  const absoluteElementTop = elementRect.top + window.pageYOffset;
+  const navbarHeight = 80; // Approximate navbar height with padding
+
+  const scrollTo = absoluteElementTop - navbarHeight;
+
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth",
+  });
+
+  setIsOpen(false);
+};
+
 function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "Home" },
@@ -32,7 +50,7 @@ function MainPageMenu(setIsOpen) {
       if(to === undefined) {
         return <button
             key={id}
-            onClick={() => scrollToCenter(id, setIsOpen)}
+            onClick={() => (id === "program" || id === "hero" || id === "speaker") ? scrollToTop(id, setIsOpen) : scrollToCenter(id, setIsOpen)}
             className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
         >
           {label}
@@ -78,7 +96,11 @@ function Navbar() {
     if(hash) {
 
       const id = hash.replace("/^#/", '').replace("#", '')
-      scrollToCenter(id, setIsOpen)
+      if (id === "program" || id === "hero" || id === "speaker") {
+        scrollToTop(id, setIsOpen);
+      } else {
+        scrollToCenter(id, setIsOpen);
+      }
     }
   }, [hash])
 

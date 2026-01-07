@@ -161,6 +161,14 @@ const speakers = [
         group: "",
         organization: "Monash University",
         profileImage: "/speaker/naim.jpeg",
+    },
+    {
+        topic: "",
+        name: "Dr. Maria Spichkova",
+        position: "Senior Lecturer",
+        group: "",
+        organization: "RMIT University",
+        profileImage: "/speaker/maria.jpeg",
     },      
     // {
     //     topic: "",

@@ -2,12 +2,11 @@ import React from "react";
 
 function Team({ id }) {
     const TeamMember = [
-        { Name: "Dr. Patanamon Thongtanunam", ProfilePic: `/team/patanamon.webp`, Pronoun: "(she/her)", CurrentPosition: "Senior Lecturer, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
+        { Name: "Dr. Patanamon Thongtanunam", ProfilePic: `/team/patanamon.webp`, Pronoun: "(she/her)", CurrentPosition: "Associate Professor, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
         { Name: "Dr. Kla Tantithamthavorn", ProfilePic: `/team/chakkrit.webp`, Pronoun: "(he/him)", CurrentPosition: "Associate Professor, Department of Software Systems & Cybersecurity, Monash University", ConferencePosition: "" },
         { Name: "Dr. Chetan Arora", ProfilePic: `/team/chetan.webp`, Pronoun: "(he/him)", CurrentPosition: "Senior Lecturer, Department of Software Systems & Cybersecurity, Monash University", ConferencePosition: "" },
         { Name: "Dr. Tingting Bi", ProfilePic: `/team/tingting.webp`, Pronoun: "(she/her)", CurrentPosition: "Lecturer, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
         { Name: "Dr. Michael Fu", ProfilePic: `/team/michael.webp`, Pronoun: "(he/him)", CurrentPosition: "Lecturer, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
-        { Name: "Kanin Kearpimy", ProfilePic: `/team/kanin.webp`, Pronoun: "(he/him)", CurrentPosition: "PhD Student, School of Computing and Information Systems, The University of Melbourne", ConferencePosition: "" },
     ];
 
     return (

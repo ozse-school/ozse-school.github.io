@@ -1,10 +1,31 @@
 import { Card, CardContent } from "../components/card.js";
+import { getOrganizationLogo } from "../lib/utils";
 
 const SpeakerCard = ({ speaker }) => {
+    const orgLogo = getOrganizationLogo(speaker.organization);
+    // Smaller logos for Transurban and RMIT
+    const orgLower = speaker.organization?.toLowerCase() || '';
+    const isSmallLogo = orgLower.includes('transurban') || orgLower.includes('rmit');
+    const logoMaxWidth = isSmallLogo ? 'max-w-[80px]' : 'max-w-[120px]';
+    
     return (
         <Card className="min-h-[500px] relative bg-gradient-to-br from-card to-card/50 border-0 shadow-lg hover:shadow-2xl transition-all duration-500 group overflow-hidden">
             {/* Background gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            {/* Organization logo tag in top left corner */}
+            {orgLogo && (
+                <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-sm rounded-lg p-2 shadow-md border border-gray-200/50 group-hover:scale-105 transition-transform duration-300">
+                    <img
+                        src={orgLogo}
+                        alt={`${speaker.organization} logo`}
+                        className={`h-8 w-auto object-contain ${logoMaxWidth}`}
+                        onError={(e) => {
+                            e.currentTarget.style.display = 'none';
+                        }}
+                    />
+                </div>
+            )}
 
             <CardContent className="relative p-8">
                 <div className="flex flex-col items-center text-center space-y-6">

@@ -60,7 +60,7 @@ function Venue({ id }) {
         </div>
         <div className="w-full flex flex-col items-center justify-center">
           <div className="text-center px-2 sm:px-0 mb-6">
-            <p className="text-xl sm:text-2xl font-bold">Melbourne Connect</p>
+            <p className="text-xl sm:text-2xl font-bold">Level-M, Forum 1, Melbourne Connect</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-3">
               <a
                   className="underline text-blue-300 hover:text-blue-500"

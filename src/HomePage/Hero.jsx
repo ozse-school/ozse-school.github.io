@@ -32,7 +32,7 @@ function Hero({id}) {
         <p className="text-4xl md:text-6xl font-bold mb-4"> Australian Summer School in Software Engineering (OzSE) </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
             <p className="text-lg md:text-2xl">
-              9 - 10 February 2026, Melbourne Connect, Level-M, Forum 1.
+              9 - 10 February 2026, Level-M, Forum 1, Melbourne Connect.
             </p>
             <button
               onClick={openMapApp}

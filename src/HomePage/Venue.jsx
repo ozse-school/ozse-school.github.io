@@ -17,6 +17,22 @@ function Venue({ id }) {
     }
   };
 
+  // Function to open map app with public transport directions
+  const openMapAppPublicTransport = () => {
+    const address = "Melbourne Connect, 700 Swanston St, Carlton VIC 3053";
+    
+    // Detect if user is on iOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    
+    if (isIOS) {
+      // Apple Maps with public transport (dirflg=r for transit)
+      window.open(`maps://maps.apple.com/?daddr=${encodeURIComponent(address)}&dirflg=r`, '_blank');
+    } else {
+      // Google Maps with transit mode
+      window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}&travelmode=transit`, '_blank');
+    }
+  };
+
   return (
     <div
       className="text-left p-12 space-y-8 px-4 sm:px-0 flex flex-col items-center justify-center"
@@ -70,13 +86,13 @@ function Venue({ id }) {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-0">Getting There</h2>
             <button
-              onClick={openMapApp}
+              onClick={openMapAppPublicTransport}
               className="px-4 py-2 bg-[#000F46] text-white rounded-full font-semibold hover:bg-[#000F46]/90 transition-colors flex items-center gap-2 self-start sm:self-center"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
               </svg>
-              Get Directions
+              Get Public Transport Directions
             </button>
           </div>
           <div className="grid md:grid-cols-3 gap-6">

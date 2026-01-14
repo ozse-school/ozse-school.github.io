@@ -33,6 +33,22 @@ function Venue({ id }) {
     }
   };
 
+  // Function to open map app with walking directions
+  const openMapAppWalking = () => {
+    const address = "Melbourne Connect, 700 Swanston St, Carlton VIC 3053";
+    
+    // Detect if user is on iOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    
+    if (isIOS) {
+      // Apple Maps with walking directions (dirflg=w for walking)
+      window.open(`maps://maps.apple.com/?daddr=${encodeURIComponent(address)}&dirflg=w`, '_blank');
+    } else {
+      // Google Maps with walking mode
+      window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}&travelmode=walking`, '_blank');
+    }
+  };
+
   return (
     <div
       className="text-left p-12 space-y-8 px-4 sm:px-0 flex flex-col items-center justify-center"
@@ -100,7 +116,12 @@ function Venue({ id }) {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
                 <span className="text-2xl mr-2">🚶</span>
-                Pedestrians
+                <button
+                  onClick={openMapAppWalking}
+                  className="px-3 py-1.5 bg-[#000F46] text-white rounded-lg font-semibold hover:bg-[#000F46]/90 transition-colors text-left"
+                >
+                  Pedestrians
+                </button>
               </h3>
               <p className="text-gray-700">
                 Pedestrian access is available from <strong>Swanston Street</strong> and <strong>Cardigan Street</strong>.
@@ -111,7 +132,14 @@ function Venue({ id }) {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
                 <span className="text-2xl mr-2">🚃</span>
-                Trams
+                <a
+                  href="https://yarratrams.com.au/route-guides"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-[#000F46] text-white rounded-lg font-semibold hover:bg-[#000F46]/90 transition-colors inline-block"
+                >
+                  Trams
+                </a>
               </h3>
               <p className="text-gray-700 mb-2">
                 Trams run along Swanston Street. Get off at <strong>Melbourne Uni station</strong>.
@@ -128,7 +156,14 @@ function Venue({ id }) {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3 flex items-center">
                 <span className="text-2xl mr-2">🚂</span>
-                Train
+                <a
+                  href="https://www.metrotrains.com.au/timetables/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 bg-[#000F46] text-white rounded-lg font-semibold hover:bg-[#000F46]/90 transition-colors inline-block"
+                >
+                  Train
+                </a>
               </h3>
               <p className="text-gray-700">
                 The closest train station is <strong>Parkville station</strong>.

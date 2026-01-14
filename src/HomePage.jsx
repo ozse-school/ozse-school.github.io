@@ -15,10 +15,10 @@ function HomePage() {
   return (
     <div>
       <Hero id="hero" />
-      <Venue id="venue" />
       {/* <Agenda id="agenda" /> */}
       {/* <RegisterBanner id="register" /> */}
       <Content id="content" />
+      <Venue id="venue" />
       <SpeakersSection id="speaker" />
       <Program id="program" />
       <Supporters id="support" />

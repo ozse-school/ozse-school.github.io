@@ -41,6 +41,7 @@ export const scrollToTop = (id, setIsOpen) => {
 function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "Home" },
+    { id: "venue", label: "Location & Parking" },
     { id: "program", label: "Program" },
     { id: "speaker", label: "Speakers" },
     { id: "support", label: "Supporters" },
@@ -50,7 +51,7 @@ function MainPageMenu(setIsOpen) {
       if(to === undefined) {
         return <button
             key={id}
-            onClick={() => (id === "program" || id === "hero" || id === "speaker") ? scrollToTop(id, setIsOpen) : scrollToCenter(id, setIsOpen)}
+            onClick={() => (id === "program" || id === "hero" || id === "speaker" || id === "venue") ? scrollToTop(id, setIsOpen) : scrollToCenter(id, setIsOpen)}
             className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
         >
           {label}
@@ -70,6 +71,7 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
+    { id: "venue", label: "Location & Parking", to: "/#venue" },
     { id: "program", label: "Program", to: "/#program" },
     { id: "speaker", label: "Speakers", to: "/#speaker" },
     { id: "support", label: "Supporters", to: "/#support" },
@@ -96,7 +98,7 @@ function Navbar() {
     if(hash) {
 
       const id = hash.replace("/^#/", '').replace("#", '')
-      if (id === "program" || id === "hero" || id === "speaker") {
+      if (id === "program" || id === "hero" || id === "speaker" || id === "venue") {
         scrollToTop(id, setIsOpen);
       } else {
         scrollToCenter(id, setIsOpen);

@@ -41,9 +41,9 @@ export const scrollToTop = (id, setIsOpen) => {
 function MainPageMenu(setIsOpen) {
   return [
     { id: "hero", label: "Home" },
-    { id: "venue", label: "Location & Parking" },
-    { id: "program", label: "Program" },
     { id: "speaker", label: "Speakers" },
+    { id: "program", label: "Program" },
+    { id: "venue", label: "Venue & Parking" },
     { id: "support", label: "Supporters" },
     { id: "team", label: "Organizers" },
     { id: "history", label: "History", to: "/history" },
@@ -71,9 +71,9 @@ function MainPageMenu(setIsOpen) {
 function OtherPageMenu(setIsOpen) {
   return [
     { id: "home", label: "Home", to: "/" },
-    { id: "venue", label: "Location & Parking", to: "/#venue" },
-    { id: "program", label: "Program", to: "/#program" },
     { id: "speaker", label: "Speakers", to: "/#speaker" },
+    { id: "program", label: "Program", to: "/#program" },
+    { id: "venue", label: "Venue & Parking", to: "/#venue" },
     { id: "support", label: "Supporters", to: "/#support" },
     { id: "team", label: "Organizers", to: "/#team" },
     { id: "history", label: "History", to: "/history" },

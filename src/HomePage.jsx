@@ -18,9 +18,9 @@ function HomePage() {
       {/* <Agenda id="agenda" /> */}
       {/* <RegisterBanner id="register" /> */}
       <Content id="content" />
-      <Venue id="venue" />
       <SpeakersSection id="speaker" />
       <Program id="program" />
+      <Venue id="venue" />
       <Supporters id="support" />
       <Team id="team" />
       {/* <ContactUs id="contact" /> */}

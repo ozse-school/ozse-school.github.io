@@ -56,7 +56,7 @@ function Venue({ id }) {
     >
       <div className="flex flex-col pt-12 lg:px-0 md:px-4 space-y-8 sm:px-0 w-full max-w-6xl">
         <div className="flex flex-col pt-12 lg:px-0 md:px-4 space-y-8 sm:px-0">
-          <h1 className="text-left text-3xl lg:px-0 md:px-4 sm:text-4xl font-bold">Location</h1>
+          <h1 className="text-left text-3xl lg:px-0 md:px-4 sm:text-4xl font-bold">Venue</h1>
         </div>
         <div className="w-full flex flex-col items-center justify-center">
           <div className="text-center px-2 sm:px-0 mb-6">

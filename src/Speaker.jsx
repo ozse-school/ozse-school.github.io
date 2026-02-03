@@ -5,9 +5,9 @@ const speakers = [
     {
         topic: "",
         name: "Professor Jon Whittle",
-        position: "Managing Director",
+        position: "Distinguished Fellow",
         group: "",
-        organization: "CSIRO's Data61",
+        organization: "University of Melbourne",
         profileImage: "/speaker/jon.png",
     },
     {
@@ -108,7 +108,7 @@ const speakers = [
     },
      {
         topic: "",
-        name: "A/Professor Yulei Sui",
+        name: "Professor Yulei Sui",
         position: "ARC Future Fellow",
         group: "",
         organization: "University of New South Wales",

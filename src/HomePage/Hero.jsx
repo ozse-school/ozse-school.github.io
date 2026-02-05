@@ -33,7 +33,7 @@ function Hero({id}) {
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
             <p className="text-lg md:text-2xl">
               9 - 10 February 2026, Level-M, Forum 1, Melbourne Connect.
-            </p>
+          </p>
             <button
               onClick={openMapApp}
               className="px-4 py-2 bg-white text-[#000F46] rounded-full font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 text-sm md:text-base whitespace-nowrap"

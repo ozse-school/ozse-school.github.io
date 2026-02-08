@@ -61,7 +61,7 @@ const programData = {
       { time: "14:00-14:10", duration: "10", type: "Q&A", title: "Joint Q&A Discussion", speaker: "Speakers", abstract: "", bio: "" },
       { time: "14:10-14:40", duration: "30", type: "Break", title: "☕ Break", speaker: "", abstract: "", bio: "" },
       { time: "", duration: "", type: "Section", title: "Opportunities & Challenges of Agentic SE", speaker: "", abstract: "", bio: "", chair: "Prof Rashina Hoda" },
-      { time: "14:40-15:30", duration: "50", type: "Activity", title: "Interactive Discussion", speaker: "", abstract: "", bio: "" },
+      { time: "14:40-15:30", duration: "50", type: "Activity", title: "Envisioning Agentic Software Engineering Beyond Code", speaker: "Prof Rashina Hoda", abstract: "Are you excited/hopeful/concerned/scared about the future of Software Engineering in the era of Agentic AI? Want a safe space to explore your ideas, emotions, hopes, and fears related to Agentic SE/AI? Come along to this final session of the conference for some thought-provoking fun! Based on her recent vision of \"Agentic Software Engineering beyond Code\" and her experience as a LEGO® Serious Play® facilitator, Prof Rashina Hoda will run an immersive game session aimed at helping attendees envision the future of Software Engineering with Agentic AI in a safe and fun environment. Bring along yourself, a fun attitude to play and learning, and enjoy the game!", bio: "" },
       { time: "", duration: "", type: "Section", title: "Social Event", speaker: "", abstract: "", bio: "", plainTitle: true },
       { time: "15:30-17:00", duration: "90", type: "Event", title: "Networking/Social Event/Celebration + Closing", speaker: "OC Team", abstract: "", bio: "" },
     ]
@@ -211,7 +211,7 @@ function Program({ id }) {
                           <div className="space-y-4">
                             {session.abstract && (
                               <div>
-                                <h4 className="font-semibold text-sm md:text-base mb-2 text-gray-900">📄 Abstract</h4>
+                                <h4 className="font-semibold text-sm md:text-base mb-2 text-gray-900">📄 {session.type === "Activity" ? "Session Details" : "Abstract"}</h4>
                                 <p className="text-sm md:text-base text-gray-700 leading-relaxed">{session.abstract}</p>
                               </div>
                             )}

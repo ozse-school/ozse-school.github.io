@@ -1,4 +1,6 @@
 import React from "react";
+// Import the group photo directly
+import groupPhoto from "../assets/gallery/DSC06065.JPG";
 
 function Content({ id }) {
     return (
@@ -9,6 +11,52 @@ function Content({ id }) {
             <div
                 className="flex flex-col pt-12 pb-6 space-y-8 md:px-4 md:text-lg max-w-6xl w-full"
             >
+                {/* Event Photo */}
+                <div className="w-full mb-6 relative group">
+                    <img
+                        src={groupPhoto}
+                        alt="OzSE Event"
+                        className="w-full h-auto rounded-lg shadow-lg object-cover"
+                    />
+                    <button
+                        onClick={() => {
+                            const imageSrc = groupPhoto;
+                            const imageName = "OzSE-Group-Photo.jpg";
+                            fetch(imageSrc)
+                                .then(response => response.blob())
+                                .then(blob => {
+                                    const url = window.URL.createObjectURL(blob);
+                                    const link = document.createElement("a");
+                                    link.href = url;
+                                    link.download = imageName;
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                    window.URL.revokeObjectURL(url);
+                                })
+                                .catch(error => {
+                                    console.error("Download failed:", error);
+                                    window.open(imageSrc, "_blank");
+                                });
+                        }}
+                        className="absolute top-4 right-4 bg-white/90 hover:bg-white text-[#000F46] p-3 rounded-full shadow-lg transition-all hover:scale-110 focus:outline-none focus:ring-2 focus:ring-white"
+                        title="Download photo"
+                    >
+                        <svg
+                            className="w-5 h-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                            />
+                        </svg>
+                    </button>
+                </div>
 
                 <p>
                     The <b>Australian Summer School in Software Engineering (OzSE)</b> aims to tackle these challenges by serving as a three-way connection hub that brings together graduate students, researchers, and industry leaders across Australia. OzSE will serve as a platform to foster collaboration, focusing on practical and emerging issues in AI-embedded software engineering. Through a dynamic program of keynote speakers, talks, and networking sessions, OzSE aims to meet the following objectives:

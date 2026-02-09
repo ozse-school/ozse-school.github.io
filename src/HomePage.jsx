@@ -5,6 +5,7 @@ import Supporters from "./HomePage/Supporters";
 import Content from "./HomePage/Content.jsx";
 import SpeakersSection from "./Speaker.jsx";
 import Program from "./HomePage/Program.jsx";
+import PhotoGallery from "./HomePage/PhotoGallery.jsx";
 import Team from "./HomePage/Team.jsx";
 
 // import Agenda from "./HomePage/Agenda";
@@ -20,6 +21,7 @@ function HomePage() {
       <Content id="content" />
       <SpeakersSection id="speaker" />
       <Program id="program" />
+      <PhotoGallery id="gallery" />
       <Venue id="venue" />
       <Supporters id="support" />
       <Team id="team" />

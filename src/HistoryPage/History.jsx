@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function History({ id }) {
 
@@ -86,7 +87,15 @@ function History({ id }) {
 
                     <li>
                         <b>2026 – Australian Summer School in Software Engineering (OzSE)</b> hosted by University of Melbourne and Monash University<br />
-                        The summer school returns in 2026 with a renewed focus on foundational training, cutting-edge research, and responsible AI in software engineering.
+                        The summer school returned in 2026 with a renewed focus on foundational training, cutting-edge research, and responsible AI in software engineering.<br />
+                        <Link to="/archive/2026" className="text-blue-600 hover:underline font-medium">
+                            View the OzSE 2026 archive (speakers, program, photos &amp; organizers) →
+                        </Link>
+                    </li>
+
+                    <li>
+                        <b>2027 – Australian Summer School in Software Engineering (OzSE)</b> hosted at RMIT University, Melbourne<br />
+                        OzSE returns on <b>18–19 February 2027</b> at RMIT University in Melbourne, continuing to bring together students, researchers, and industry across Australasia. Details are being announced on the <Link to="/" className="text-blue-600 hover:underline font-medium">homepage</Link>.
                     </li>
                 </ul>
             </div>

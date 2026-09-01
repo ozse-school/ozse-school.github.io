@@ -43,7 +43,6 @@ function MainPageMenu(setIsOpen) {
     { id: "hero", label: "Home" },
     { id: "speaker", label: "Speakers" },
     { id: "program", label: "Program" },
-    { id: "gallery", label: "Photos" },
     { id: "venue", label: "Venue" },
     { id: "support", label: "Supporters" },
     { id: "team", label: "Organizers" },
@@ -52,7 +51,7 @@ function MainPageMenu(setIsOpen) {
     if (to === undefined) {
       return <button
         key={id}
-        onClick={() => (id === "program" || id === "hero" || id === "speaker" || id === "venue" || id === "gallery") ? scrollToTop(id, setIsOpen) : scrollToCenter(id, setIsOpen)}
+        onClick={() => (id === "program" || id === "hero" || id === "speaker" || id === "venue") ? scrollToTop(id, setIsOpen) : scrollToCenter(id, setIsOpen)}
         className="px-3 py-2 hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
       >
         {label}
@@ -74,7 +73,6 @@ function OtherPageMenu(setIsOpen) {
     { id: "home", label: "Home", to: "/" },
     { id: "speaker", label: "Speakers", to: "/#speaker" },
     { id: "program", label: "Program", to: "/#program" },
-    { id: "gallery", label: "Photos", to: "/#gallery" },
     { id: "venue", label: "Venue", to: "/#venue" },
     { id: "support", label: "Supporters", to: "/#support" },
     { id: "team", label: "Organizers", to: "/#team" },
@@ -100,7 +98,7 @@ function Navbar() {
     if (hash) {
 
       const id = hash.replace("/^#/", '').replace("#", '')
-      if (id === "program" || id === "hero" || id === "speaker" || id === "venue" || id === "gallery") {
+      if (id === "program" || id === "hero" || id === "speaker" || id === "venue") {
         scrollToTop(id, setIsOpen);
       } else {
         scrollToCenter(id, setIsOpen);
@@ -157,12 +155,12 @@ function Navbar() {
 
         <div className="hidden md:flex md:space-x-6 md:items-center">
           {location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen)}
-          <Link
-            to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
-            className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          <span
+            className="px-6 py-3 text-sm text-center rounded-full bg-blue-900/60 border-2 border-blue-400/50 text-white/80 font-semibold cursor-default whitespace-nowrap"
+            title="Registration will open closer to the event"
           >
-            Registration
-          </Link>
+            Registration — Coming Soon
+          </span>
           <a
             href={'https://www.linkedin.com/company/ozse2026/'}
             target="_blank"
@@ -186,12 +184,12 @@ function Navbar() {
       >
         <div className="flex flex-col px-4 py-3 space-y-2">
           {location.pathname === "/" ? MainPageMenu(setIsOpen) : OtherPageMenu(setIsOpen)}
-          <Link
-            to={'https://bookings.events.unimelb.edu.au/event/2dd5ba88-f9ff-4181-9fbd-736af910a5a3/home'}
-            className="px-6 py-3 text-sm text-center rounded-full bg-blue-800 border-2 border-blue-400 text-white font-semibold hover:bg-white hover:text-[#000F46] transition-colors"
+          <span
+            className="px-6 py-3 text-sm text-center rounded-full bg-blue-900/60 border-2 border-blue-400/50 text-white/80 font-semibold cursor-default whitespace-nowrap"
+            title="Registration will open closer to the event"
           >
-            Registration
-          </Link>
+            Registration — Coming Soon
+          </span>
           <a
             href={'https://www.linkedin.com/company/ozse2026/'}
             target="_blank"

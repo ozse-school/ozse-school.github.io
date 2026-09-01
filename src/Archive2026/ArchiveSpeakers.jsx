@@ -1,4 +1,4 @@
-import SpeakerCard from "./components/SpeakerCard.jsx";
+import SpeakerCard from "../components/SpeakerCard.jsx";
 import React from "react";
 
 const speakers = [

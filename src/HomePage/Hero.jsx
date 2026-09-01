@@ -3,7 +3,7 @@ import React from "react";
 function Hero({id}) {
   // Function to open map app based on device
   const openMapApp = () => {
-    const address = "Melbourne Connect, 700 Swanston St, Carlton VIC 3053";
+    const address = "RMIT University, 124 La Trobe St, Melbourne VIC 3000";
     
     // Detect if user is on iOS
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -32,7 +32,7 @@ function Hero({id}) {
         <p className="text-4xl md:text-6xl font-bold mb-4"> Australian Summer School in Software Engineering (OzSE) </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-4">
             <p className="text-lg md:text-2xl">
-              9 - 10 February 2026, Level-M, Forum 1, Melbourne Connect.
+              18 - 19 February 2027, RMIT University, Melbourne.
           </p>
             <button
               onClick={openMapApp}
